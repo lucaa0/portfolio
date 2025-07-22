@@ -7,7 +7,6 @@ import { ExternalLink } from 'lucide-react';
 import { Project } from '@/hooks/usePortfolioData';
 import project1 from '@/assets/ecom.png';
 import project2 from '@/assets/aitrip.png';
-import project3 from '@/assets/project-3.jpg';
 
 interface PortfolioSectionProps {
   projects: Project[];
@@ -20,7 +19,7 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({
   isEditMode,
   onUpdate
 }) => {
-  const projectImages = [project1, project2, project3];
+  const projectImages = [project1, project2];
 
   const updateProject = (index: number, updatedProject: Project) => {
     const newProjects = [...projects];
